@@ -1,9 +1,40 @@
+
+
 .calculator-container {
  display: grid;
- height: 250px;
- width: 250px;
+ height: 320px;
+ width: 220px;
  grid-template-columns: repeat(4, 50px);
  grid-template-rows: repeat(5, 50px);
  border: 5px solid red;
- 
+ gap: 5px;
+ padding: 10px;
+ border-radius: 25px;
+ margin-left: 400px;
+ background-color: black;
 }
+
+.calc{
+grid-column: 1 / -1;
+border-style: solid;
+border-color: red;
+display: flex;
+align-content: center;
+padding: 2px;
+}
+
+#input-text{
+text-align: end;
+border-radius: 12px;
+border-color: aquamarine;
+box-shadow: inset blue;   
+}
+
+#clear {
+grid-column: span 2;    
+}
+
+#delete {
+grid-column: span 2;    
+}
+

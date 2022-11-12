@@ -1,19 +1,46 @@
-let add = function(num, num2){
-   return  num + num2;
+
+const input = document.getElementById('input-text');
+
+
+
+
+
+let add = function(total, num){
+  return  total + num;
 };
 
-let divide = function(num, num2){
-   return x / y; 
+let divide = function(total, num){
+   return total / num; 
 };
 
-let multiply = function(num, num2){
-    return m * n;
+let multiply = function(total, num){
+    return total * num;
 }
 
 let power = function(num, num2){
     return Math.pow(num, num2);
 }
 
-let subtract = function(num, num2){
-    return num - num2
+let subtract = function(total, num){
+    return total - num;
+}
+
+const opp = [add, subtract, divide, multiply, power];
+
+let cal = (num)=>{
+    input.value = input.value+num;
+}
+
+let cl = () =>{
+  input.value = '';  
+}
+
+let dl = () =>{
+ let d = document.getElementById('input-text').value;
+ input.value = d.slice(0, -1);
+   
+}
+
+let results = () =>{
+   
 }
