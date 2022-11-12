@@ -36,11 +36,9 @@ let cl = () =>{
 }
 
 let dl = () =>{
- let d = document.getElementById('input-text').value;
- input.value = d.slice(0, -1);
-   
+ input.value = input.value.slice(0, -1); 
 }
 
 let results = () =>{
-   
+  input.value = eval(input.value);
 }
