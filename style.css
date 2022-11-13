@@ -2,10 +2,10 @@
 
 .calculator-container {
  display: grid;
- height: 320px;
+ height: 370px;
  width: 220px;
  grid-template-columns: repeat(4, 50px);
- grid-template-rows: repeat(5, 50px);
+ grid-template-rows: repeat(6, 50px);
  border: 5px solid red;
  gap: 5px;
  padding: 10px;
@@ -21,6 +21,7 @@ border-color: red;
 display: flex;
 align-content: center;
 padding: 2px;
+border-radius: 15px;
 }
 
 #input-text{
@@ -38,3 +39,10 @@ grid-column: span 2;
 grid-column: span 2;    
 }
 
+button {
+border-radius: 15px;   
+}
+
+#equal {
+grid-column: span 2;    
+}

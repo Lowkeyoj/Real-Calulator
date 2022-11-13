@@ -11,7 +11,7 @@
 <body>
 <div class ="calculator-container">
     <div class="calc">
-    <input type="text" id="input-text" placeholder="0">
+    <input type="text" id="input-text" placeholder="0" >
     </div>
     <button id="delete"onclick="dl()">Delete</button>
     <button id="clear" onclick="cl()">Clear</button>
@@ -30,6 +30,9 @@
     <button onclick="cal(0)">0</button>
     <button onclick="cal('/')">/</button> 
     <button id="power" onclick="cal('^')">^</button>  
+    <button onclick="cal('!')">!</button>
+    <button onclick="cal('%')">%</button>
+    <button id="dot"   onclick="cal('.')">.</button>
     <button id="equal" onclick="results()">=</button>
     
 </div>
